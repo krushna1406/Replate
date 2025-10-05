@@ -7,6 +7,7 @@ const DATA = [
     { id: 5, title: "Conference Lunch (Tech Park)", tag: ["events", "veg"], qty: 70, window: "Pickup by 7:30 PM", area: "Hinjawadi", notes: "North Indian buffet" }
 ];
 
+
 const state = { search: "", filterTag: "" };
 
 const $ = sel => document.querySelector(sel);
@@ -86,3 +87,18 @@ form.addEventListener('submit', (e) => {
 // Accessibility: close on backdrop click or Escape
 modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('show') });
 window.addEventListener('keydown', (e) => { if (e.key === 'Escape') modal.classList.remove('show') });
+
+document.getElementById('loginForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  const res = await fetch('http://localhost:5000/api/auth/login', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, password })
+  });
+
+  const data = await res.json();
+  alert(data.message);
+});

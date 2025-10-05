@@ -29,7 +29,7 @@
         <a class="link" href="#">Impact</a>
         <div class="nav-cta">
           <button class="btn btn-ghost" id="open-login">Log in</button>
-          <button class="btn btn-primary" id="open-donate">Offer Surplus</button>
+          <button class="btn btn-primary" id="open-donate">Sign in</button>
         </div>
       </nav>
     </div>
@@ -74,13 +74,13 @@
   <section class="section" id="how">
     <div class="container">
       <h2>How Replate Works</h2>
-      <p class="muted">Simple 3‑step flow for Restaurants, Events & NGOs.</p>
+      <p class="muted">Simple 3-step flow for Restaurants, Events & NGOs.</p>
       <div class="grid-3" style="margin-top:14px">
         <div class="card step">
           <div class="num">1</div>
           <div>
             <h3>List your surplus</h3>
-            <p class="muted">Add cuisine, quantity, veg/non‑veg tags, prep time, and safe‑by window. We auto‑flag
+            <p class="muted">Add cuisine, quantity, veg/non-veg tags, prep time, and safe-by window. We auto-flag
               allergen info.</p>
           </div>
         </div>
@@ -88,15 +88,15 @@
           <div class="num">2</div>
           <div>
             <h3>NGOs claim & schedule</h3>
-            <p class="muted">Nearby NGOs get a ping. They pick a slot, assign a volunteer, and generate a pickup QR.</p>
+            <p class="muted">Nearby NGOs get a ping. They claim the food and confirms pickup</p>
           </div>
         </div>
         <div class="card step">
           <div class="num">3</div>
           <div>
             <h3>Handover & receipt</h3>
-            <p class="muted">QR scan confirms handover. Both sides receive a digital receipt and basic compliance
-              checklist.</p>
+            <p class="muted">Volunteer then reaches to the pickup location and takes the surplus food.
+            </p>
           </div>
         </div>
       </div>
@@ -121,7 +121,7 @@
         <select id="filterTag" class="select">
           <option value="">All </option>
           <option value="veg">Vegetarian</option>
-          <option value="nonveg">Non‑Veg</option>
+          <option value="nonveg">Non-Veg</option>
           <option value="events">Event</option>
           <option value="restaurant">Restaurant</option>
         </select>
@@ -140,13 +140,13 @@
           <img src="images/logo1.png" alt="">
           <span>Replate</span>
         </div>
-        <p>Built for zero‑waste cities. Empowering communities with responsible surplus distribution.</p>
+        <p>Built for zero-waste cities. Empowering communities with responsible surplus distribution.</p>
       </div>
       <div>
         <h4>For Partners</h4>
         <a href="#">Restaurant Onboarding</a><br />
         <a href="https://en.wikipedia.org/wiki/Non-governmental_organization" target="_blank">NGO Verification</a><br />
-        <a href="#">Volunteer Handbook</a>
+        <!-- <a href="#">Volunteer Handbook</a> -->
       </div>
       <div>
         <h4>Compliance</h4>
@@ -204,7 +204,7 @@
             <label>Food Type</label>
             <select class="select" name="type" required>
               <option>Vegetarian</option>
-              <option>Non‑Vegetarian</option>
+              <option>Non-Vegetarian</option>
               <option>Mixed</option>
             </select>
           </div>
@@ -216,7 +216,7 @@
 
         <div class="row" style="margin-top:10px">
           <div class="col">
-            <label>Safe‑by time</label>
+            <label>Safe-by time</label>
             <input class="input" type="datetime" name="safeBy" placeholder="dd/mm/yyyy" />
           </div>
           <div class="col">
