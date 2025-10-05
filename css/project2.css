@@ -51,7 +51,7 @@
     header {
       position: sticky;
       top: 0;
-      backdrop-filter: saturate(140%) blur(10px);
+      backdrop-filter: saturate(140%) blur(6px);
       background: rgba(11, 15, 20, .6);
       border-bottom: 1px solid rgba(255, 255, 255, .06);
       z-index: 40
@@ -90,7 +90,7 @@
 
     .logo svg {
       filter: drop-shadow(0 6px 14px rgba(20, 184, 166, .35))
-    } 
+    }
 
     .nav a.link {
       opacity: .85;
@@ -122,7 +122,7 @@
       transform: translateY(1px)
     }
 
-    .btn-primary { 
+    .btn-primary {
       background: linear-gradient(145deg, var(--brand), var(--brand-2));
       color: #06210f;
       box-shadow: 0 10px 24px rgba(34, 197, 94, .25);
@@ -339,13 +339,41 @@
       font-size: 14px
     }
 
-    /* CTA strip */
     .strip {
       margin-top: 24px;
-      background: linear-gradient(180deg, rgba(184, 34, 64, 0.59), rgba(184, 64, 20, 0.164));
-      border: 1px solid rgba(255, 255, 255, .08);
+      background: linear-gradient(180deg, rgba(255, 0, 89, 0.59), rgba(76, 0, 20, 0.27));
+      border: 1px solid rgb(186 46 46 / 42%);
       border-radius: var(--radius);
+      border-bottom:1px solid rgb(0 0 0 / 55%);
       padding: 18px;
+    }
+
+    .biogas {
+      display: flex;
+      justify-content: center;
+    }
+
+    .biogas>img {
+      border-radius: 10px;
+      width: 350px;
+    }
+
+    .section-padding {
+      padding: 1rem 6rem;
+    }
+
+    .card p {
+      font-style: inherit;
+    }
+
+    .biogas-text p{
+      background-color: #074300;
+      box-shadow: inset 0px 0px 20px #030e03;
+      width: 70%;
+      height: auto;
+      padding: 2rem 1rem 2rem 1rem;
+      border: 1px solid rgba(3, 47, 0, 0.568);
+      border-radius: 10px;
     }
 
     /* Footer */
